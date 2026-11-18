@@ -48,6 +48,7 @@ Tested on GitHub, by Progression Labs in a private throwaway repository with the
 - A broken config and a wrong checksum each failed the run without a "key found" alert.
 - A pull request with a fake key only in `tests/` failed the check, and so did one whose key carried a `gitleaks:allow` comment.
 - With the check required and administrators included, a failing pull request was blocked and a clean one was not.
+- With the final workflow files, a clean pull request passed the check and showed as ready to merge, and the weekly scan passed on clean history when run by hand in this repository.
 
 Not tested: releases newer than 8.30.1, the weekly schedule firing on its own (only manual runs), required code-owner review, and pull requests from forks.
 
