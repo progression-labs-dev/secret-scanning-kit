@@ -1,0 +1,9 @@
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Known public identifiers"
+regexTarget = "secret"
+regexes = [
+  '''^the-exact-public-value$''',
+]
